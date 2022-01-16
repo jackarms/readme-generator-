@@ -1,28 +1,50 @@
-const fs = require('fs');
-const readmeDataArgs = process.argv.slice(2, process.argv.length);
+const fs = require("fs");
+const inquirer = require("inquirer");
 
-const readMePage = (project, author) => {
-    return `
-    <!DOCTYPE html> 
-    <html lang="en"> 
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Portfolio Demo</title>
-    </head>
-  
-    <body>
-      <h1>${project}</h1>
-      <h2>${author}</h2>
-    </body>
-    </html>
-    `;
+const readMePage = (userObject) => {
+  return ~
+  #$(userObject.title);
 };
 
-const project = readmeDataArgs[0];
-const author = readmeDataArgs[1];
+var userInput;
 
-fs.writeFile('index.html', readMePage(project, author), err => {
+const questions = function () {
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: "title",
+      message: "What is your project's title:",
+    },
+    {
+      type: "input",
+      name: "github",
+      message: "Enter your GitHub Username:",
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Provide some information about your project:",
+    },
+    {
+      type: "input",
+      name: "installation",
+      message: "Provide information concerning installation instructions:",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Provide information on how your project may be used:",
+    },
+  ]);
+};
+questions().then((answers) => {
+  userInput = answers;
+  console.log(userInput);
+  writeFile();
+});
+
+function writeFile() {
+  fs.writeFile("readme.md", readMePage(userInput), (err) => {
     if (err) throw err;
-})
+  });
+}
