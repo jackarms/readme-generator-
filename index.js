@@ -9,21 +9,21 @@ const readMePage = (userObject) => {
   ${userObject.description}
 
   ## Table of Contents
-  - Installation
-  - Usage 
-  - Credits
-  - License
+  - [Installation](installation)
+  - [Usage](usage)
+  - [Credits](credits)
+  - [License](license)
 
-  ## Installation
+  ## Installation (installation)
   ${userObject.installation}
 
-  ## Usage
+  ## Usage (usage)
   ${userObject.usage}
 
-  ## Credits
+  ## Credits (credits)
   ${userObject.credit}
 
-  ## License
+  ## License (license)
   ${userObject.license}
 
   ## Questions

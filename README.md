@@ -1,31 +1,31 @@
 
-  # ReadMe Generator 
+  # sdfas;idjfbqwirjgbiwerg
 
   ## Description
-  Through command line prompts a readme can be produced for any project.
+  sldkjfblwiejbfiwejbf
 
   ## Table of Contents
-  - Installation
-  - Usage 
-  - Credits
-  - License
+  - [Installation](installation)
+  - [Usage](usage)
+  - [Credits](credits)
+  - [License](license)
 
-  ## Installation
-  Simply clone and npm install
+  ## Installation (installation)
+  alksjfblwefb;weif;o
 
-  ## Usage
-  It can be used to quickly create a high quality readme 
+  ## Usage (usage)
+  lsIDJbfiwebfi;uwefh
 
-  ## Credits
-  me myself and i 
+  ## Credits (credits)
+  laisdhfblisebfiweau
 
-  ## License
+  ## License (license)
   undefined
 
   ## Questions
   If there are any further questions:
-  email: jackarmstrong52491@icloud.com
-  GitHub: https://github.com/jackarms
+  email: SLDHFBliawjefbiwej
+  GitHub: sdjifbawjebf;iwebf;iu
 
 
    
