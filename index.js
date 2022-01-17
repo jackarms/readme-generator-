@@ -9,21 +9,21 @@ const readMePage = (userObject) => {
   ${userObject.description}
 
   ## Table of Contents
-  - [Installation](installation)
-  - [Usage](usage)
-  - [Credits](credits)
-  - [License](license)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
 
-  ## Installation (installation)
+  ## Installation <a name="installation"></a>
   ${userObject.installation}
 
-  ## Usage (usage)
+  ## Usage <a name="usage"></a>
   ${userObject.usage}
 
-  ## Credits (credits)
+  ## Credits <a name="credits"></a>
   ${userObject.credit}
 
-  ## License (license)
+  ## License <a name="license"></a>
   ${userObject.license}
 
   ## Questions
@@ -63,6 +63,11 @@ const questions = function () {
       type: "input",
       name: "usage",
       message: "Provide information on how your project may be used:",
+    },
+    {
+      type: "input",
+      name: "license",
+      message: "Please enter license used",
     },
     {
       type: "input",
