@@ -2,8 +2,37 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 const readMePage = (userObject) => {
-  return ~
-  #$(userObject.title);
+  return `
+  # ${userObject.title}
+
+  ## Description
+  ${userObject.description}
+
+  ## Table of Contents
+  - Installation
+  - Usage 
+  - Credits
+  - License
+
+  ## Installation
+  ${userObject.installation}
+
+  ## Usage
+  ${userObject.usage}
+
+  ## Credits
+  ${userObject.credit}
+
+  ## License
+  ${userObject.license}
+
+  ## Questions
+  If there are any further questions:
+  email: ${userObject.email}
+  GitHub: ${userObject.github}
+
+
+   `;
 };
 
 var userInput;
@@ -34,6 +63,21 @@ const questions = function () {
       type: "input",
       name: "usage",
       message: "Provide information on how your project may be used:",
+    },
+    {
+      type: "input",
+      name: "credit",
+      message: "List your collaborators:",
+    },
+    {
+      type: "input",
+      name: "github",
+      message: "Please enter your GitHub username:",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Please enter your email address:",
     },
   ]);
 };
