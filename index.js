@@ -14,16 +14,16 @@ const readMePage = (userObject) => {
   - [Credits](#credits)
   - [License](#license)
 
-  ## Installation <a name="installation"></a>
+  ## [Installation](#installation)
   ${userObject.installation}
 
-  ## Usage <a name="usage"></a>
+  ## [Usage](#usage)
   ${userObject.usage}
 
-  ## Credits <a name="credits"></a>
+  ## [Credits](#credits)
   ${userObject.credit}
 
-  ## License <a name="license"></a>
+  ## [License](#license)
   ${userObject.license}
 
   ## Questions
@@ -67,7 +67,7 @@ const questions = function () {
     {
       type: "input",
       name: "license",
-      message: "Please enter license used",
+      message: "Please enter license used:",
     },
     {
       type: "input",
